@@ -159,7 +159,12 @@ class ServerSentEventsBlueprint(Blueprint):
         @stream_with_context
         def generator():
             for message in self.messages(channel=channel):
-                yield str(message)
+                chunk = str(message)
+                send_me = ""
+                for line in chunk.splitlines():
+                    send_me += line[5:] + "\n"
+                # print(f"Sending message: {send_me}")
+                yield send_me
 
         return current_app.response_class(
             generator(),
