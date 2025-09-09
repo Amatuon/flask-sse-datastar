@@ -9,7 +9,7 @@ authors = [
   { name="Michael McDougal", email="michael.93.mcdougal@gmail.com" },
 ]
 description = "Server-Sent Events for Flask"
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">=3.5"
 license = { text = "MIT" }
 classifiers = [
