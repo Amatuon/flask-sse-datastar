@@ -1,6 +1,8 @@
-Flask SSE |build-status| |coverage-status| |docs|
+Flask SSE Datastar |build-status| |coverage-status| |docs|
 =================================================
 A Flask extension for HTML5 `server-sent events`_ support, powered by Redis_.
+
+This version has had a minor change so that it works with [Datastar](https://data-star.dev/)
 
 Example of sending events:
 
